@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'zos2!5!y=^9c8fbs^dueilwr7erl4y@kd71s6ry^2%h$*mjfb='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-#ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = ['139.59.69.200']
+ALLOWED_HOSTS = ["*"]
+#ALLOWED_HOSTS = ['139.59.69.200']
 
 # Application definition
 
@@ -76,23 +76,23 @@ WSGI_APPLICATION = 'mc.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'clrrmsdb',
-        'USER': 'clarorms',
-        'PASSWORD': 'Clarorms1@3',
-        'HOST': '139.59.69.200',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'clrrmsdb',
+#         'USER': 'clarorms',
+#         'PASSWORD': 'Clarorms1@3',
+#         'HOST': '139.59.69.200',
+#         'PORT': '',
+#     }
+# }
 
 
 # Password validation
@@ -132,7 +132,7 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'login'
