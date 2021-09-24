@@ -90,7 +90,7 @@ DATABASES = {
         'USER': 'clarorms',
         'PASSWORD': 'Clarorms1@3',
         'HOST': '139.59.69.200',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
 
