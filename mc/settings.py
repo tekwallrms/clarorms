@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'zos2!5!y=^9c8fbs^dueilwr7erl4y@kd71s6ry^2%h$*mjfb='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-# ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = ['139.59.69.200']
+ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ['139.59.69.200']
 
 # Application definition
 
