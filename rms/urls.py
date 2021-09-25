@@ -9,4 +9,7 @@ urlpatterns = [
     path('biharsitedata/', views.custlist, name='rwsrj'),
     path('openIds/<Rid>/', views.openId, name='iddb'),
     path('search/', views.search, name='searchid'),
+    path('mphome/', views.mp_home, name='mphome'),
+    path('mpreport/', views.mp_rep, name='mprep'),
+    path('mpcustomers/', views.mp_cust, name='mpcust'),
 ]

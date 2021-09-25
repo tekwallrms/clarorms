@@ -17,6 +17,8 @@ from import_export.admin import ImportExportModelAdmin
 @admin.register(DBData)
 @admin.register(homeid)
 @admin.register(BHdb)
+@admin.register(MPSiteDetails)
+@admin.register(MPSiteData)
 
 
 
